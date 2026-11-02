@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+:root {
+font-family: "Segoe UI", Arial, sans-serif;
+color: #29243b;
+background: #f7f5fc;
+
+/* Main theme colors */
+--primary: #8064d9;
+--primary-dark: #6246bd;
+--primary-light: #eee8ff;
+
+/* Background colors */
+--background: #f7f5fc;
+--white: #ffffff;
+--sidebar-bg: #ffffff;
+--hover-bg: #f1edfc;
+
+/* Text colors */
+--text: #29243b;
+--muted: #89849b;
+--text-light: #b1abc1;
+
+/* Borders and messages */
+--border: #e9e5f2;
+--message-sent: #8064d9;
+--message-received: #ffffff;
+
+/* Status colors */
+--success: #35a879;
+--error: #e05260;
+
+/* Shadows */
+--shadow: 0 8px 30px rgba(64, 45, 120, 0.08);
+}
+
+body {
+min-width: 320px;
+min-height: 100vh;
+background: var(--background);
+}
+
+button,
+input,
+textarea {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+border: none;
+}
+
+a {
+color: var(--primary);
+text-decoration: none;
+}
+
+a:hover {
+color: var(--primary-dark);
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+outline: 2px solid var(--primary);
+outline-offset: 3px;
+}

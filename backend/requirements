@@ -1,0 +1,12 @@
+mongodb         //database
+mongoose        //odm= object document mapping
+fastify         //api
+@fastify/cors   //cross port run
+@fastify/jwt    //authentication
+bcrypt          //hashed password
+joi             //schema validation
+dotenv          //use environment variables
+path
+@fastify/oauth2 //enable oauth module for google sign in
+@fastify/cookie 
+@fastify/websocket //  for receiving instant messages
