@@ -87,8 +87,17 @@ if (!token) {
 }
 
 // Connect to the backend WebSocket endpoint
+const API_URL = import.meta.env.VITE_API_URL;
+
+if (!API_URL) {
+  setError("Backend URL is not configured.");
+  return;
+}
+
+const WS_URL = API_URL.replace(/^https:/, "wss:").replace(/^http:/, "ws:");
+
 const socket = new WebSocket(
-  `ws://localhost:3000/ws?token=${encodeURIComponent(token)}`
+  `${WS_URL}/ws?token=${encodeURIComponent(token)}`
 );
 
 socketRef.current = socket;
