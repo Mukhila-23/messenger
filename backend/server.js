@@ -6,7 +6,7 @@ async function server_start() {
 try {
 await connect_db();
     await server.ready();
-    await server.listen({port: Number(ports),host: "127.0.0.1"});
+    await server.listen({port: Number(ports),host: "0.0.0.0"});
 } catch (error) {
     console.log(error);
     process.exit(1);
